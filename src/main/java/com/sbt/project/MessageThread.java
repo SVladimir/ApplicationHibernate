@@ -21,7 +21,7 @@ public class MessageThread extends Thread {
     public void run() {
         try {
             System.err.println("Message received " + message);
-            sleep(5000); // имитируем обработку сообщения
+            sleep(5000);
             channel.basicAck(tag, false);
             System.err.println("Message deleted " + message);
         } catch (Exception ex) {

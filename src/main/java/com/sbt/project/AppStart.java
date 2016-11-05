@@ -27,9 +27,9 @@ public class AppStart {
             Account accountBank = new Account(bank, "20202810938493859685");
 
             Document document = new Document(accountBank, account, BigDecimal.valueOf(4700000, 2),
-                    "Внесение собственных средств на текущий счет. НДС не облагается.");
+                    "test1");
             Document documentDep = new Document(account, accountDep, BigDecimal.valueOf(4700000, 2),
-                    "Внесение денежных средств на вклад. НДС не облагается.");
+                    "test2");
 
             session.beginTransaction();
             session.save(client);
