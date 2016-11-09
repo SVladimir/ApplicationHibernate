@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>homeWork23</groupId>
-    <artifactId>BigApplicationHibernate</artifactId>
+    <artifactId>ApplicationHibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>

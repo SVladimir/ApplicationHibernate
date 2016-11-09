@@ -6,11 +6,11 @@ module.exports = {
   },
   devServer:{
     inline: true,
-    port:3334
+    port:3333
   },
   module:{
     loaders:[
-      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
+      {test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
   }
 };

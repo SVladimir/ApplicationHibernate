@@ -5,7 +5,7 @@
     <bean id = "dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <constructor-arg value="jdbc:h2:tcp://localhost/~/test;USER=sa;password="/>
     </bean>
-    <bean id="sessionFactory" class="org.hibernate.SessionFactory">
+   <bean id="sessionFactory" class="org.hibernate.SessionFactory">
         	        <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 

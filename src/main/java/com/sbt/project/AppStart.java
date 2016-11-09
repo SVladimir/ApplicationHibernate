@@ -1,5 +1,6 @@
 package com.sbt.project;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -81,7 +82,8 @@ public class AppStart {
                 }
             }
             session.getTransaction().commit();
-        } catch (RuntimeException e) {
+        } catch (HibernateException e) {
+            System.out.println("Problem creating session factory");
             e.printStackTrace();
             if (session != null) {
                 session.getTransaction().rollback();
