@@ -91,7 +91,7 @@ const User = ({ user, changeInfo, selectUser }) => (
     <div style={style.buttons}>
       <Button onClick={() => selectUser(user.id - 1)}>{'<-'}</Button>
       <Button onClick={() => selectUser(0)}>Список</Button>
-      <Button onClick={() => sendUser(user)}>Отправить</Button>
+      <Button onClick={() => sendUser(user)}>Ликвидировать</Button>
       <Button onClick={() => selectUser(user.id + 1)}>{'->'}</Button>
     </div>
   </div>
