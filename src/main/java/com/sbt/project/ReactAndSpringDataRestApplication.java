@@ -12,4 +12,5 @@ public class ReactAndSpringDataRestApplication {
         SpringApplication.run(ReactAndSpringDataRestApplication.class, args);
     }
 }
+
 // end::code[]
