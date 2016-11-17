@@ -13,7 +13,7 @@ import java.util.List;
  * Created by Master on 05.10.2016.
  */
 public class AppStart {
-    public static void mainr(String[] args) {
+    public static void main(String[] args) {
         SessionFactory sessionFactory = null;
         Session session = null;
         String clientName = "John Smith";
