@@ -62,7 +62,7 @@ public class AppStart {
                             Account correspondAccount = null;
                             String typeOp = "Debet";
                             if (doc.getAccountDt().equals(acc)) {
-                                correspondAccount = doc.getAccountCt();
+                                correspondAccount = doc.getAccountCt(); 
                                 sum = sum.subtract(doc.getSum());
                             } else {
                                 correspondAccount = doc.getAccountDt();
