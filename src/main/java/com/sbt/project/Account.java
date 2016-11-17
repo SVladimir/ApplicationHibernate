@@ -12,7 +12,6 @@ public class Account implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;
-
     @Column(name = "SALDO")
     private BigDecimal saldo = BigDecimal.valueOf(0,2);
     @OneToOne(fetch = FetchType.LAZY)

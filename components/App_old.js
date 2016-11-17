@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Users from './FirstPage';
+import Users from './Users';
 import User from './User';
 
 // import './style.css'
