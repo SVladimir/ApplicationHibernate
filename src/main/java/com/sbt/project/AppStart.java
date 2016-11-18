@@ -60,6 +60,12 @@ public class AppStart {
                         List<Document> documents = queryDocuments.setParameter("account", acc).list();
                         for (Document doc : documents) {
                             Account correspondAccount = null;
+                            MessageProduser messageProduser = new MessageProduser();
+                            try   {
+                            messageProduser.sendMessage("Test doc"+doc);} catch (Exception e) {
+                                e.printStackTrace();
+                            }
+
                             String typeOp = "Debet";
                             if (doc.getAccountDt().equals(acc)) {
                                 correspondAccount = doc.getAccountCt(); 

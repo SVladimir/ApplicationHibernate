@@ -1,4 +1,4 @@
-package com.sbt.project;
+package com.sbt.accounting;
 
 /**
  * Created by svetlanashmalko on 06.11.16.

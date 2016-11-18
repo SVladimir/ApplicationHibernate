@@ -26,21 +26,22 @@ public class MessageReceiver {
         QueueingConsumer consumer = new QueueingConsumer(channel);
         channel.basicConsume(queueName, false, consumer);
         boolean run = true;
-       // while (run) {
+        while (run) {
             QueueingConsumer.Delivery delivery;
             try {
                 delivery = consumer.nextDelivery();
-                channel.close();
-                conn.close();
-                return new String((delivery.getBody()));
-               // new MessageThread(channel, new String(delivery.getBody()), delivery.getEnvelope().getDeliveryTag()).start();
+            //    channel.close();
+             //   conn.close();
+               // return new String((delivery.getBody()));
+             new MessageThread(channel, new String(delivery.getBody()), delivery.getEnvelope().getDeliveryTag()).start();
             } catch (InterruptedException ie) {
-          //      continue;
+          //    continue;
                 channel.close();
                 conn.close();
            return  "";
             }
-        //}
+        }
 
+        return "";
     }
 }
