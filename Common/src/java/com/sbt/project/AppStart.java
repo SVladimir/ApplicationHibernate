@@ -1,5 +1,9 @@
-package com.sbt.project;
+//package com.sbt.project;
 
+import com.sbt.project.Account;
+import com.sbt.project.Client;
+import com.sbt.project.Document;
+import com.sbt.project.MessageProduser;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

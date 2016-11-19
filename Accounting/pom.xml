@@ -88,12 +88,7 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
-
-
-
-
-
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+ <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
@@ -141,7 +136,7 @@
     </dependency>
         <dependency>
             <groupId>homeWork23</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>Common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     <dependency>

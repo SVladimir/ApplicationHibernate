@@ -8,7 +8,7 @@ public class Engine {
     public static void main(String[] args) throws Exception {
 
         MessageReceiver messageReceiver=new MessageReceiver();
-        System.out.printf("Будем проводить документ ="+messageReceiver.recciev());
+        System.out.printf("PROCESSED ="+messageReceiver.recciev());
 
         
     }

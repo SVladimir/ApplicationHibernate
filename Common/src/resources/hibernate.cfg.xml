@@ -16,9 +16,9 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
 
         <!-- List of XML mapping files -->
-        <mapping class="Client"/>
-        <mapping class="Account"/>
-        <mapping class="Document"/>
+        <mapping class="com.sbt.project.Client"/>
+        <mapping class="com.sbt.project.Account"/>
+        <mapping class="com.sbt.project.Document"/>
 
     </session-factory>
 </hibernate-configuration>
