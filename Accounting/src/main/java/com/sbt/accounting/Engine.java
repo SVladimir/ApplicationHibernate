@@ -10,5 +10,6 @@ public class Engine {
         MessageReceiver messageReceiver=new MessageReceiver();
         System.out.printf("Будем проводить документ ="+messageReceiver.recciev());
 
+        
     }
 }
