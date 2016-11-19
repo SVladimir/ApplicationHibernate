@@ -1,5 +1,8 @@
 package com.sbt.accounting;
 
+import com.sbt.project.Document;
+import com.sbt.project.ICancel;
+
 /**
  * Created by svetlanashmalko on 06.11.16.
  */

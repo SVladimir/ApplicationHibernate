@@ -22,7 +22,6 @@ package com.sbt.project;
 
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Greg Turnquist
@@ -31,7 +30,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-    @RequestMapping(value = "/")
+   // @RequestMapping(value = "/")
     public String index() {
         return "index";
     }

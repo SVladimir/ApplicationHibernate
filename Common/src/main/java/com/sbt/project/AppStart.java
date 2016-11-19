@@ -65,7 +65,7 @@ public class AppStart {
                             messageProduser.sendMessage("Test doc"+doc);} catch (Exception e) {
                                 e.printStackTrace();
                             }
-
+/*
                             String typeOp = "Debet";
                             if (doc.getAccountDt().equals(acc)) {
                                 correspondAccount = doc.getAccountCt(); 
@@ -74,14 +74,8 @@ public class AppStart {
                                 correspondAccount = doc.getAccountDt();
                                 typeOp = "Credit";
                                 sum = sum.add(doc.getSum());
-                            }
-                            System.out.print(correspondAccount.getClient().getName());
-                            System.out.print("\t\t");
-                            System.out.print(correspondAccount.getAccount());
-                            System.out.print("\t\t");
-                            System.out.print(typeOp);
-                            System.out.print("\t\t");
-                            System.out.println(doc.getSum());
+                            }*/
+
                         }
                         System.out.println("Out saldo: " + sum + "\n");
                     }
