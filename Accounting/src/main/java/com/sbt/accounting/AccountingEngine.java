@@ -39,7 +39,7 @@ public class AccountingEngine {
                 for (Document doc : documents) {
                     proccessing.procces(doc);
                     System.out.printf("Proccesing done=" + doc);
-                    session.save(doc);
+                    session.save(doc); 
              }
                 session.getTransaction().commit();
             } catch (HibernateException e) {

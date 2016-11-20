@@ -1,9 +1,5 @@
-//package com.sbt.project;
+package com.sbt.project;
 
-import com.sbt.project.Account;
-import com.sbt.project.Client;
-import com.sbt.project.Document;
-import com.sbt.project.MessageProduser;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -42,6 +38,8 @@ public class AppStart {
             session.save(account);
             session.save(accountDep);
             session.save(accountBank);
+            System.out.println("document: " + document.toString());
+            System.out.println("documentDep: " + documentDep.toString());
             session.save(document);
             session.save(documentDep);
 
@@ -66,7 +64,8 @@ public class AppStart {
                             Account correspondAccount = null;
                             MessageProduser messageProduser = new MessageProduser();
                             try   {
-                            messageProduser.sendMessage("Test doc"+doc);} catch (Exception e) {
+                                System.out.println("doc: " + doc.getId().toString() );
+                            messageProduser.sendMessage(doc.getId().toString());} catch (Exception e) {
                                 e.printStackTrace();
                             }
 /*

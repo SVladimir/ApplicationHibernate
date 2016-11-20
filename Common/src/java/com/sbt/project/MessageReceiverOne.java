@@ -1,11 +1,11 @@
 package com.sbt.project;
 
-import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
-public class MessageReceiver {
+public class MessageReceiverOne {
 
     public String recciev() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
@@ -31,10 +31,10 @@ public class MessageReceiver {
             try {
                 delivery = consumer.nextDelivery();
 
-            //    channel.close();
-             //   conn.close();
-               // return new String((delivery.getBody()));
-             new MessageThread(channel, new String(delivery.getBody()), delivery.getEnvelope().getDeliveryTag()).start();
+                channel.close();
+                conn.close();
+              return new String((delivery.getBody()));
+            // new MessageThread(channel, new String(delivery.getBody()), delivery.getEnvelope().getDeliveryTag()).start();
             } catch (InterruptedException ie) {
           //    continue;
                 channel.close();
@@ -43,6 +43,6 @@ public class MessageReceiver {
           //  }
         }
 
-        return "";
+
     }
 }
